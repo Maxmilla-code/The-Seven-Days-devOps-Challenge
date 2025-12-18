@@ -1,0 +1,63 @@
+DevOps Learning Journey 🚀
+Day 1: AWS & EC2 Fundamentals
+This repository documents my DevOps learning journey. This is Day One of my DevOps challenge, focused on setting up the foundational cloud environment required for future CI/CD work.
+The learning and steps followed here are based on the 7-Day DevOps Challenge (Day 1) video by Natasha from the Nexar team.
+Reference Video: https://www.youtube.com/watch/f25K0_J3hgo
+________________________________________
+What I Learned
+On Day 1, the goal was simple and critical: create a secure AWS environment and launch an EC2 instance that I can interact with from my local machine using VS Code.
+This sets the foundation for building, deploying, and automating applications in the cloud.
+________________________________________
+Steps Completed
+1. Created an AWS Account
+•	Signed up for an Amazon Web Services (AWS) account.
+•	Logged in initially as the root user.
+AWS Console: https://aws.amazon.com/console/
+________________________________________
+2. Created an IAM User (Best Practice)
+•	Created a new IAM user instead of using the root account.
+•	Assigned AdministratorAccess permissions.
+•	Enabled AWS Management Console access for the user.
+•	Downloaded and stored the IAM credentials securely.
+IAM Console: https://console.aws.amazon.com/iam/
+Why this matters: Using an IAM user improves security and protects the root account from everyday usage.
+________________________________________
+3. Launched an EC2 Instance
+•	Navigated to the EC2 dashboard.
+•	Launched a Free Tier eligible EC2 instance.
+•	Selected a Linux-based AMI.
+•	Used instance type: t2.micro.
+EC2 Console: https://console.aws.amazon.com/ec2/
+What an EC2 instance is: An EC2 instance is a virtual computer in the cloud that runs applications and stores code.
+________________________________________
+4. Created and Configured a Key Pair
+•	Created a new EC2 key pair.
+•	Downloaded the .pem private key file.
+•	Updated file permissions to allow secure access.
+•	Stored the key safely for future SSH connections.
+Key pair documentation: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
+________________________________________
+5. Configured Network & Security Settings
+•	Allowed SSH traffic only from my IP address.
+•	Avoided opening SSH access to the public internet.
+What SSH is: SSH (Secure Shell) allows secure remote access to servers like EC2 instances.
+SSH overview: https://www.ssh.com/academy/ssh
+________________________________________
+6. Connected EC2 to VS Code
+•	Installed VS Code locally.
+•	Used the SSH key to connect VS Code to the EC2 instance.
+•	Enabled direct interaction with the cloud server from my editor.
+VS Code: https://code.visualstudio.com/
+VS Code Remote SSH Extension: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+________________________________________
+Outcome
+By the end of Day 1, I successfully:
+•	Set up a secure AWS environment
+•	Launched and configured an EC2 instance
+•	Connected my EC2 instance to VS Code using SSH
+This environment will be used throughout the DevOps challenge to build, deploy, and automate applications.
+________________________________________
+Next Steps
+Day 2 will focus on deploying a simple web application and preparing the environment for CI/CD automation.
+________________________________________
+
